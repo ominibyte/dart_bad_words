@@ -8,7 +8,7 @@ void main() {
     expect(Filter.isProfane("Fuck the Dodgers"), true);
     expect(Filter.isProfane('All Dodgers are nobheads'), true);
     expect(Filter.isProfane('The Dodgers are sh!t'), true);
-    expect(() => Filter.isProfane(null), throwsNoSuchMethodError);
+    expect(Filter.isProfane('sexman'), true);
   });
 
   test('test clean method', () {
